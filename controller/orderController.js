@@ -13,7 +13,7 @@ const EMAIL_USER = process.env.EMAIL_USER;
 const EMAIL_PASS = process.env.EMAIL_PASS;
 
 const transporter = nodemailer.createTransport({
-  host: 'https://skill-lab-enternal.onrender.com',
+  host: 'http://localhost:3000',
   service: "gmail",
   secure: false,
   auth: {

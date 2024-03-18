@@ -13,6 +13,7 @@ const logoutRoutes = require("./logout/logout")
 const ratingRoutes = require("./routes/ratingRoutes");
 const cron = require('node-cron');
 const Order = require('./models/order');
+const analyticsRoutes = require("./routes/analyticsRoutes");
 
 const app = express();
 app.use(express.json());
@@ -109,7 +110,7 @@ app.use("/api", foodRoutes);
 app.use("/api", orderRoutes);
 app.use("/api", logoutRoutes);
 app.use("/api", ratingRoutes);
-
+app.use("/api", analyticsRoutes);
 // Example route in authRoutes.js or any other relevant route file
 app.get('/profile', (req, res) => {
   console.log('Authenticated user:', req.user);
