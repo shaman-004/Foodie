@@ -2,7 +2,7 @@
 
 ---
 
-# Foodie - Your Ultimate Food Ordering Companion
+# FoodieFare: Your Culinary Adventure Awaits
 
 Welcome to Foodie, a sophisticated food ordering and delivery application designed to provide a seamless experience for users and optimize operational efficiency.
 
