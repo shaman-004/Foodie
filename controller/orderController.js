@@ -26,12 +26,13 @@ exports.placeOrder = async (req, res) => {
   try {
     const { userId, foodId, paymentMode, quantity } = req.body;
 
-    const userIdObject = new mongoose.Types.ObjectId(userId);
-    console.log(userIdObject);
-    console.log(req.user);
+    // Remove this line if you want to use userId directly
+    // const userIdObject = new mongoose.Types.ObjectId(userId);
+
+    console.log(userId); // Log userId directly
 
     const newOrder = new Order({
-      userId: userIdObject,
+      userId, // Use userId directly
       foodId,
       paymentMode,
       quantity,

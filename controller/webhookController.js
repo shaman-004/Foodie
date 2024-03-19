@@ -25,7 +25,7 @@ exports.mostOrderedFoodWebhook = async (req, res) => {
     const mostOrderedFood = foodOrders[0]; // Most ordered food item
 
     // Send information to webhook URL
-    const webhookURL = 'YOUR_WEBHOOK_URL';
+    const webhookURL = 'https://webhook.site/6963158c-2689-4e98-9936-11c08315e95d';
     await axios.post(webhookURL, {
       mostOrderedFood,
     });
